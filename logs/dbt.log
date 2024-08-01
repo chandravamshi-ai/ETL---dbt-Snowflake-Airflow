@@ -1,0 +1,31 @@
+[0m22:19:25.298461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112ef2c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f5c690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f5cd90>]}
+
+
+============================== 22:19:25.301079 | 62b54650-afbd-4223-b781-7472b8a14385 ==============================
+[0m22:19:25.301079 [info ] [MainThread]: Running with dbt=1.8.4
+[0m22:19:25.301382 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/chandravamshidasyam/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:19:25.310232 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/Users/chandravamshidasyam/.dbt')}
+[0m22:19:25.310530 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m22:19:31.435825 [debug] [MainThread]: Starter project path: /Users/chandravamshidasyam/anaconda3/envs/ELT/lib/python3.11/site-packages/dbt/include/starter_project
+[0m22:19:31.447791 [info ] [MainThread]: 
+Your new dbt project "data_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:19:31.448469 [info ] [MainThread]: Setting up your profile.
+[0m22:22:55.620563 [info ] [MainThread]: Profile data_pipeline written to /Users/chandravamshidasyam/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:22:55.839695 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 210.58247, "process_user_time": 0.819573, "process_kernel_time": 0.227159, "process_mem_max_rss": "96731136", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m22:22:55.841818 [debug] [MainThread]: Command `dbt init` succeeded at 22:22:55.841567 after 210.59 seconds
+[0m22:22:55.843195 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1129cb9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f5cf50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10541d050>]}
+[0m22:22:55.843881 [debug] [MainThread]: Flushing usage events
