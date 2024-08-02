@@ -46,3 +46,39 @@ Initialize dbt project
 - It asks for user name and password set up
 - type all the things we created above for ex type db_wh when it asks for wharehouse etc..,
 - treads type 10
+
+
+## step 5
+
+- inside dbt_project.yml file inside models section put below text 
+```yml
+models:
+  data_pipeline:
+    # Config indicated by + and applies to all files under models/example/
+    staging:
+      +materialized: view
+      snowflake_warehouse: dbt_wh
+    marts:
+      +materialized: table
+      snowflake_warehouse: dbt_wh
+```
+
+- create folders named staging and marts in data_pipeline/models
+
+## step 6 
+- create `packages.yml` file in data_pipeline folder and inser follwoing contents
+```yml
+packages:
+  - package: dbt-labs/dbt_utils
+    version: 1.2.0
+```
+- run dbt deps
+
+## step 7
+Let's create source and staging table
+- first lets create `tpch_sources.yml` which is used mention source of data. we are using snowflake_sample_data which you get when you create accoutn with snowflake.
+- we will create this file in `models > staging > tpch_sources.yml`
+- we create `stg_tpch_orders.sql` this will create views in our `dbt_db` database views.
+- run `dbt run`
+- then we create `stg_tpch_line_items.sql` .
+- to run only above file use command `dbt run -s stg_tpch_line_items` 
