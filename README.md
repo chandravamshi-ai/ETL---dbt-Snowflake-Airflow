@@ -1,4 +1,14 @@
-# ETL - dbt, snowflake, airflow
+# ETL - Extract, Transform and Load using dbt, snowflake, airflow
+---
+![Airflow](https://github.com/chandravamshi-ai/ETL-dbt-Snowflake-Airflow/blob/main/imgs/airflow%20webserver.png))
+![Docker](https://github.com/chandravamshi-ai/ETL-dbt-Snowflake-Airflow/blob/main/imgs/docker.png))
+
+
+![Snowflake stg items](https://github.com/chandravamshi-ai/ETL-dbt-Snowflake-Airflow/blob/main/imgs/STG_TPCH_LINE_ITEMS.png))
+![Snowflake stg orders](https://github.com/chandravamshi-ai/ETL-dbt-Snowflake-Airflow/blob/main/imgs/STG_TPCH_ORDERS.png))
+
+![Snowflake model orders](https://github.com/chandravamshi-ai/ETL-dbt-Snowflake-Airflow/blob/main/imgs/INT_ORDER_ITEMS.png))
+![Snowflake model orders summary](https://github.com/chandravamshi-ai/ETL-dbt-Snowflake-Airflow/blob/main/imgs/INT_ORDER_ITEMS_SUMMARY.png))
 
 ---
 ## Below are the complete steps i followed from start to end of this project.
