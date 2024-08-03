@@ -1,5 +1,8 @@
 # ETL - dbt, snowflake, airflow
 
+---
+## Below are the complete steps i followed from start to end of this project.
+
 ## setup
 - pip install dbt-core
 - pip install dbt-snowflake
